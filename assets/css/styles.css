@@ -628,7 +628,6 @@ display: inline-block;
       margin-top: 1rem;
       position: relative;
       bottom: 1rem;
-      left: 1rem;
       padding-top: 1rem;
     
       & a {
@@ -873,10 +872,22 @@ display: inline-block;
   }
 
   .nav_bar {
+    width: 95%; /* Légèrement moins que 100 pour éviter les bugs de bordure */
+    left: 2.5%; 
+    transform: none;
+
     & .nav {
+      min-width: 95vw;
+
       & ul{
         gap: 0.5rem;
       }
+      
+      a {
+        padding: calc(var(--spacing)) 0.6rem;
+        font-size: 0.7rem;
+      }
+
     }
   }
 
@@ -902,16 +913,24 @@ display: inline-block;
 }
 
 @media (max-width: 480px) {
-  body{
-    width: 140vw;
+  body {
+    width: 100%;
+    overflow-x: hidden; /* Sécurité */
+  }
+
+  /* Force tous les éléments à ne jamais dépasser la largeur de l'écran */
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  main {
+    padding: 1rem; /* Donne un peu d'air sur les côtés */
+    width: 100%;
   }
 
   header h1 { 
     font-size: 1.85rem;
-  }
-
-  main {
-    padding: 0;
   }
 
   .about p{
@@ -920,7 +939,7 @@ display: inline-block;
 
   .about, .bts-sio {
     & .skills-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 1rem;
 
       & .skill-card {
@@ -949,6 +968,10 @@ display: inline-block;
     min-height: 180px;
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
   .project-links {
     flex-direction: column;
 
@@ -959,9 +982,9 @@ display: inline-block;
   }
 
   .nav_bar {
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 98vw;
+    width: 95%; /* Légèrement moins que 100 pour éviter les bugs de bordure */
+    left: 2.5%; 
+    transform: none;
 
     & .nav {
       min-width: 95vw;

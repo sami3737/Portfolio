@@ -26,11 +26,11 @@
       <div class="nav">
         <ul>
           <div class="nav-pill"></div>
-          <li><a href="#about" class="active">Profil</a></li>
-          <li><a href="#bts-sio">BTS SIO</a></li>
-          <li><a href="#featured-projects">Projets</a></li>
-          <li><a href="#docs">Documentations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a arialabel="Profil" href="#about" class="active">Profil</a></li>
+          <li><a arialabel="BTS SIO" href="#bts-sio">BTS SIO</a></li>
+          <li><a arialabel="Projets" href="#featured-projects">Projets</a></li>
+          <li><a arialabel="Documentations" href="#docs">Documentations</a></li>
+          <li><a arialabel="Contact" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -94,7 +94,7 @@
           <div class="card__inner">
             <div class="img"></div>
             <div class="card__face card__face--front">
-              <img src="assets/img/frontend.png"/>
+              <img alt="Programmation frontend" src="assets/img/frontend.png"/>
             </div>
             <div class="card__face card__face--back">
               <div class="card__content">
@@ -110,7 +110,7 @@
           <div class="card__inner">
             <div class="img"></div>
             <div class="card__face card__face--front">
-              <img src="assets/img/backend.png"/>
+              <img alt="Programmation backend" src="assets/img/backend.png"/>
             </div>
             <div class="card__face card__face--back">
               <div class="card__content">
@@ -125,7 +125,7 @@
         <div class="cardskill-card skill-card">
           <div class="card__inner">
             <div class="card__face card__face--front">
-              <img src="assets/img/bdd.png"/>
+              <img alt="Base de données" src="assets/img/bdd.png"/>
             </div>
             <div class="card__face card__face--back">
               <div class="card__content">
@@ -141,7 +141,7 @@
           <div class="card__inner">
             <div class="img"></div>
             <div class="card__face card__face--front">
-              <img src="assets/img/integration.png"/>
+              <img alt="Intégration de systèmes" src="assets/img/integration.png"/>
             </div>
             <div class="card__face card__face--back">
               <div class="card__content">
@@ -156,7 +156,7 @@
           <div class="card__inner">
             <div class="img"></div>
             <div class="card__face card__face--front">
-              <img src="assets/img/infra.png"/>
+              <img alt="Services et infrastructure" src="assets/img/infra.png"/>
             </div>
             <div class="card__face card__face--back">
               <div class="card__content">
@@ -173,7 +173,7 @@
             <div class="card__inner">
               <div class="img"></div>
               <div class="card__face card__face--front">
-              <img src="assets/img/tools.png"/>
+              <img alt="Outils de développement et environnement" src="assets/img/tools.png"/>
               </div>
               <div class="card__face card__face--back">
                 <div class="card__content">
@@ -261,10 +261,10 @@
             </div>
           </div>
           <div class="project-links">
-            <a href="https://github.com/sami3737/rusttech" target="_blank" class="btn-primary">
+            <a aria-label="Lien vers github projet RustTech" href="https://github.com/sami3737/rusttech" target="_blank" class="btn-primary">
               Voir le code →
             </a>
-            <a href="https://demo.rust-evolution.net/rusttech-main/" target="_blank" class="btn-secondary">
+            <a aria-label="Lien vers démonstration projet RustTech" href="https://demo.rust-evolution.net/rusttech-main/" target="_blank" class="btn-secondary">
               Voir le projet →
             </a>
           </div>
@@ -301,10 +301,10 @@
             </div>
           </div>
           <div class="project-links">
-            <a href="https://github.com/sami3737/rust" target="_blank" class="btn-primary">
+            <a aria-label="Lien vers github projet Rust" href="https://github.com/sami3737/rust" target="_blank" class="btn-primary">
               Voir le code →
             </a>
-            <a href="https://demo.rust-evolution.net/rust-main/index.php" target="_blank" class="btn-secondary">
+            <a aria-label="Lien vers démonstration projet Rust" href="https://demo.rust-evolution.net/rust-main/index.php" target="_blank" class="btn-secondary">
               Voir le projet →
             </a>
           </div>
@@ -316,30 +316,30 @@
           <h3>Silkroad_CMS</h3>
           <p>Interface web de gestion pour serveur Silkroad Online. Connexion base MSSQL, gestion boutique et joueurs, système d'authentification.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/Akeno" target="_blank" class="btn-secondary">Voir le code</a>
+            <a aria-label="Lien vers github projet Silkroad_CMS" href="https://github.com/sami3737/Akeno" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
         </div>
         <div class="card">
           <h3>PNJGui – Plugin Minecraft</h3>
           <p>Plugin Java pour création d'interfaces graphiques avec PNJ. Développé pour serveurs Minecraft, permet des interactions customisées.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/NPJGui" target="_blank" class="btn-secondary">Voir le code</a>
+            <a aria-label="Lien vers github projet PNJGui" href="https://github.com/sami3737/NPJGui" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
         </div>
         <div class="card">
           <h3>Anthony – Système de recrutement RP</h3>
           <p>Système de candidature en ligne pour serveur RP. Formulaires dynamiques, gestion des candidatures, notifications automatiques.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/anthony" target="_blank" class="btn-secondary">Voir le code</a>
-            <a href="https://demo.rust-evolution.net/anthony/" target="_blank" class="btn-secondary">Voir le projet</a>
+            <a aria-label="Lien vers github projet Anthony" href="https://github.com/sami3737/anthony" target="_blank" class="btn-secondary">Voir le code</a>
+            <a aria-label="Lien vers démonstration projet Anthony" href="https://demo.rust-evolution.net/anthony/" target="_blank" class="btn-secondary">Voir le projet</a>
           </div>
         </div>
         <div class="card">
           <h3>Leaderboard Rust Experimental</h3>
           <p>Vitrine temps réel (2018) affichant chat et classement des joueurs. Mise à jour dynamique, design responsive.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/leaderboard" target="_blank" class="btn-secondary">Voir le code</a>
-            <a href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet</a>
+            <a aria-label="Lien vers github projet Leaderboard" href="https://github.com/sami3737/leaderboard" target="_blank" class="btn-secondary">Voir le code</a>
+            <a aria-label="Lien vers démonstration projet Leaderboard" href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet</a>
           </div>
         </div>
       </div>
@@ -353,7 +353,7 @@
           <h3>Documentation Wordpress</h3>
           <p>Guide détaillé de la compréhension du fonctionnement de Wordpress. (Mise en page Gamma)</p>
           <div class="project-links">
-            <a href="assets/docs/Restitution-document-Wordpress.pdf" target="_blank" class="btn-secondary">Télécharger</a>
+            <a aria-label="Lien vers documentation Wordpress" href="assets/docs/Restitution-document-Wordpress.pdf" target="_blank" class="btn-secondary">Télécharger</a>
           </div>
         </div>
         <!-- Documentation Docker -->
@@ -361,7 +361,7 @@
           <h3>Documentation Docker</h3>
           <p>Guide détaillé de l'utilisation de Docker pour le développement et le déploiement d'applications. (Mise en page Gamma)</p>
           <div class="project-links">
-            <a href="assets/docs/Docker-et-la-conteneurisation.pdf" target="_blank" class="btn-secondary">Télécharger</a>
+            <a aria-label="Lien vers documentation Docker" href="assets/docs/Docker-et-la-conteneurisation.pdf" target="_blank" class="btn-secondary">Télécharger</a>
           </div>
         </div>
         <!-- Documentation Mise à disposition des services -->
@@ -369,7 +369,7 @@
           <h3>Documentation Mise à disposition des services</h3>
           <p>Guide détaillé de la mise à disposition des services déployés en local. (Mise en page Gamma)</p>
           <div class="project-links">
-            <a href="assets/docs/samuel-boutin-MISE-A-DISPOSITION-DES-SERVICES.pdf" target="_blank" class="btn-secondary">Télécharger</a>
+            <a aria-label="Lien vers documentation Mise à disposition des services" href="assets/docs/samuel-boutin-MISE-A-DISPOSITION-DES-SERVICES.pdf" target="_blank" class="btn-secondary">Télécharger</a>
           </div>
         </div>
         <!-- Exemple de diagramme de Gantt -->
@@ -377,7 +377,7 @@
           <h3>Exemple de diagramme de Gantt</h3>
           <p>Exemple de diagramme de Gantt réalisé pour un projet de développement d'application.</p>
           <div class="project-links">
-            <a href="assets/img/Diagramme de Gantt.png" target="_blank" class="btn-secondary">Télécharger</a>
+            <a aria-label="Lien vers diagramme de Gantt" href="assets/img/Diagramme de Gantt.png" target="_blank" class="btn-secondary">Télécharger</a>
           </div>
         </div>
       </div>
@@ -408,9 +408,9 @@
                   <p>Je suis actuellement disponible pour du travail freelance et des collaborations. N'hésitez pas à me contacter via le formulaire ou à me suivre sur les réseaux sociaux.</p>
               </div>
               <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/samuel-boutin-4b8089336/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/sami3737" target="_blank"><i class="fab fa-github"></i></a>
-                  <div>Mon CV:<a href="assets/docs/CV_Samuel_Boutin.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a></div>
+                  <a aria-label="Lien vers LinkedIn" href="https://www.linkedin.com/in/samuel-boutin-4b8089336/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  <a aria-label="Lien vers GitHub" href="https://github.com/sami3737" target="_blank"><i class="fab fa-github"></i></a>
+                  <div>Mon CV:<a aria-label="Lien vers CV" href="assets/docs/CV_Samuel_Boutin.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a></div>
               </div>
           </div>
       </div>
