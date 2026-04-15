@@ -10,7 +10,6 @@
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-
   <header>
     <h1>Portfolio - Samuel Boutin</h1>
     <p>Développeur web full‑stack passionné, je conçois des applications modernes en alliant performance, sécurité et expérience utilisateur.</p>
@@ -28,16 +27,13 @@
       </div>
     </nav>
   </header>
-
   <main>
     <!-- Indicateur de scroll -->
     <div class="bottom visible">
       <span class="scroll-indicator"></span>
     </div>
-
     <!-- Button de retour en haut -->
     <button id="back-to-top" title="Retour en haut">↑</button>
-
     <!-- Section À propos -->
     <section class="about" id="about">
       <h2>Profil</h2>
@@ -47,7 +43,6 @@
           <p>Je m'appelle Samuel Boutin, actuellement en formation BTS Services Informatiques aux Organisations (SIO) option Solutions Logicielles et Applications Métiers (SLAM). Passionné par l'informatique depuis de nombreuses années, j'ai développé mes compétences en autodidacte bien avant d'intégrer un parcours académique.</p>
           <p>Mon intérêt pour le développement est né il y a près de 15 ans, notamment grâce à ma passion pour les jeux vidéo et leur fonctionnement. J'ai commencé par créer des sites web en HTML et CSS, dont un premier projet inspiré de l'univers Naruto, sous forme de site encyclopédique. Cela m'a progressivement amené à apprendre JavaScript, PHP, SQL ainsi que le C#.</p>
         </div>
-
         <div class="info-card">
           <h3>Parcours &amp; nouvelles technologies</h3>
           <p>Depuis mon entrée en BTS SIO, j'ai consolidé mes bases et découvert de nouvelles technologies et méthodes professionnelles :</p>
@@ -61,7 +56,6 @@
           </ul>
           <p>Ce parcours me permet aujourd'hui d'avoir une vision plus globale du développement et de mieux comprendre les enjeux techniques d'un projet.</p>
         </div>
-
         <div class="info-card">
           <h3>Expérience</h3>
           <p>En parallèle de ma formation, mon apprentissage repose fortement sur la pratique personnelle. J'ai réalisé plusieurs projets, disponibles sur mon GitHub et mon portfolio, me permettant de :</p>
@@ -73,7 +67,6 @@
           </ul>
           <p>Mon expérience professionnelle en tant qu'employé de magasin m'a également permis de développer un bon sens du service, de la communication et de la gestion des besoins utilisateurs.</p>
         </div>
-
         <div class="info-card">
           <h3>Objectifs</h3>
           <p>Mon objectif est de devenir développeur fullstack, capable de concevoir des applications complètes, performantes et sécurisées.</p>
@@ -88,7 +81,6 @@
           <p><strong>Curieux :</strong><br><ul><li>Toujours intéressé par les nouvelles technologies, j'aime découvrir, tester et comprendre de nouveaux outils ou concepts.</li></ul></p>
         </div>
       </div>
-      
       <div class="skills-grid">
         <div class="cardskill-card skill-card">
           <div class="card__inner">
@@ -106,7 +98,6 @@
             </div>
           </div>
         </div>
-        
         <div class="cardskill-card skill-card">
           <div class="card__inner">
             <div class="img"></div>
@@ -123,7 +114,6 @@
             </div>
           </div>
         </div>
-
         <div class="cardskill-card skill-card">
           <div class="card__inner">
             <div class="card__face card__face--front">
@@ -139,7 +129,6 @@
             </div>
           </div>
         </div>
-
         <div class="cardskill-card skill-card">
           <div class="card__inner">
             <div class="img"></div>
@@ -155,7 +144,6 @@
             </div>
           </div>
         </div>
-
         <div class="cardskill-card skill-card">
           <div class="card__inner">
             <div class="img"></div>
@@ -173,7 +161,6 @@
             </div>
           </div>
         </div>
-
           <div class="cardskill-card skill-card">
             <div class="card__inner">
               <div class="img"></div>
@@ -194,7 +181,6 @@
           </div>
       </div>
     </section>
-
     <!-- Section BTS SIO -->
     <section id="bts-sio" class="bts-sio">
       <h2>BTS SIO</h2>
@@ -231,7 +217,6 @@
         </div>
       </div>
     </section>
-
     <!-- Section Projets Phares -->
     <section id="featured-projects">
       <h2>Projets principaux</h2>
@@ -243,7 +228,6 @@
           <p class="description">
             Plateforme e-commerce complète développée pour un serveur Rust avec intégration temps réel. Solution full-stack permettant aux joueurs d'acheter des objets virtuels et de les recevoir automatiquement en jeu via une connexion WebSocket sécurisée.
           </p>
-
           <div class="tech-stack">
             <span class="tech-tag">PHP</span>
             <span class="tech-tag">JavaScript</span>
@@ -252,19 +236,22 @@
             <span class="tech-tag">WebSocket</span>
             <span class="tech-tag">REST API</span>
           </div>
-
           <div class="key-features">
-            <h4>Fonctionnalités clés</h4>
-            <ul>
-              <li>Système de paiement sécurisé avec intégration PayPal complète</li>
-              <li>Gestion utilisateur avec authentification et profils personnalisés</li>
-              <li>Interface administrateur pour la gestion des produits et commandes</li>
-              <li>Communication serveur-boutique en temps réel via WebSocket</li>
-              <li>Système de livraison automatique des achats en jeu</li>
-              <li>Historique des transactions et gestion des inventaires</li>
-            </ul>
+            <div class="key-features-text">
+              <h4>Fonctionnalités clés</h4>
+              <ul>
+                <li>Système de paiement sécurisé avec intégration PayPal complète</li>
+                <li>Gestion utilisateur avec authentification et profils personnalisés</li>
+                <li>Interface administrateur pour la gestion des produits et commandes</li>
+                <li>Communication serveur-boutique en temps réel via WebSocket</li>
+                <li>Système de livraison automatique des achats en jeu</li>
+                <li>Historique des transactions et gestion des inventaires</li>
+              </ul>
+            </div>
+            <div class="key-features-image">
+              <img src="assets/img/Rust.png" alt="RustTech">
+            </div>
           </div>
-
           <div class="project-links">
             <a href="https://github.com/sami3737/rusttech" target="_blank" class="btn-primary">
               Voir le code →
@@ -274,7 +261,6 @@
             </a>
           </div>
         </div>
-
         <!-- Boutique Rust Experimental -->
         <div class="featured-card">
           <span class="featured-badge">Projet phare</span>
@@ -282,7 +268,6 @@
           <p class="description">
             Solution e-commerce avancée avec intégration de multiples systèmes de paiement internationaux. Architecture modulaire permettant une gestion complète des transactions avec support de différentes devises et méthodes de paiement.
           </p>
-
           <div class="tech-stack">
             <span class="tech-tag">PHP</span>
             <span class="tech-tag">MySQL</span>
@@ -291,19 +276,22 @@
             <span class="tech-tag">G2A API</span>
             <span class="tech-tag">OAuth</span>
           </div>
-
           <div class="key-features">
-            <h4>Fonctionnalités clés</h4>
-            <ul>
-              <li>Intégration de 3 systèmes de paiement (PayPal, Steam, G2A)</li>
-              <li>Gestion multi-devises et conversion automatique</li>
-              <li>Authentification Steam OAuth pour liaison de comptes</li>
-              <li>Tableau de bord administrateur complet</li>
-              <li>Système de codes promotionnels et réductions</li>
-              <li>Statistiques de ventes et rapports détaillés</li>
-            </ul>
+            <div class="key-features-text">
+              <h4>Fonctionnalités clés</h4>
+              <ul>
+                <li>Intégration de 3 systèmes de paiement (PayPal, Steam, G2A)</li>
+                <li>Gestion multi-devises et conversion automatique</li>
+                <li>Authentification Steam OAuth pour liaison de comptes</li>
+                <li>Tableau de bord administrateur complet</li>
+                <li>Système de codes promotionnels et réductions</li>
+                <li>Statistiques de ventes et rapports détaillés</li>
+              </ul>
+            </div>
+            <div class="key-features-image">
+              <img src="assets/img/Advanced.png" alt="Advanced">
+            </div>
           </div>
-
           <div class="project-links">
             <a href="https://github.com/sami3737/rust" target="_blank" class="btn-primary">
               Voir le code →
@@ -314,7 +302,6 @@
           </div>
         </div>
       </div>
-      
       <h2>Autres réalisations</h2>
       <div class="grid">
         <div class="card">
@@ -324,7 +311,6 @@
             <a href="https://github.com/sami3737/Akeno" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
         </div>
-
         <div class="card">
           <h3>PNJGui – Plugin Minecraft</h3>
           <p>Plugin Java pour création d'interfaces graphiques avec PNJ. Développé pour serveurs Minecraft, permet des interactions customisées.</p>
@@ -332,28 +318,24 @@
             <a href="https://github.com/sami3737/NPJGui" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
         </div>
-
         <div class="card">
           <h3>Anthony – Système de recrutement RP</h3>
           <p>Système de candidature en ligne pour serveur RP. Formulaires dynamiques, gestion des candidatures, notifications automatiques.</p>
           <div class="project-links">
             <a href="https://github.com/sami3737/anthony" target="_blank" class="btn-secondary">Voir le code</a>
-            <a href="https://demo.rust-evolution.net/anthony/" target="_blank" class="btn-secondary">Voir le projet →</a>
+            <a href="https://demo.rust-evolution.net/anthony/" target="_blank" class="btn-secondary">Voir le projet</a>
           </div>
         </div>
-
         <div class="card">
           <h3>Leaderboard Rust Experimental</h3>
           <p>Vitrine temps réel (2018) affichant chat et classement des joueurs. Mise à jour dynamique, design responsive.</p>
           <div class="project-links">
             <a href="https://github.com/sami3737/leaderboard" target="_blank" class="btn-secondary">Voir le code</a>
-            <a href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet →</a>
+            <a href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet</a>
           </div>
         </div>
-
       </div>
     </section>
-
     <!-- Section Documentations -->
     <section id="docs">
       <h2>Documentations techniques</h2>
@@ -426,10 +408,8 @@
       </div>
     </section>
   </main>
-
   <footer>
     © <?php echo date("Y"); ?> Samuel Boutin – Portfolio
   </footer>
-
 </body>
 </html>
