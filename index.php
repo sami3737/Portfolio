@@ -270,7 +270,7 @@
               Voir le code →
             </a>
             <a href="https://demo.rust-evolution.net/rusttech-main/" target="_blank" class="btn-secondary">
-              Démo en ligne
+              Voir le projet →
             </a>
           </div>
         </div>
@@ -309,7 +309,7 @@
               Voir le code →
             </a>
             <a href="https://demo.rust-evolution.net/rust-main/index.php" target="_blank" class="btn-secondary">
-              Démo en ligne
+              Voir le projet →
             </a>
           </div>
         </div>
@@ -321,7 +321,7 @@
           <h3>Silkroad_CMS</h3>
           <p>Interface web de gestion pour serveur Silkroad Online. Connexion base MSSQL, gestion boutique et joueurs, système d'authentification.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/Akeno" target="_blank" class="btn-secondary">GitHub</a>
+            <a href="https://github.com/sami3737/Akeno" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
         </div>
 
@@ -329,7 +329,7 @@
           <h3>PNJGui – Plugin Minecraft</h3>
           <p>Plugin Java pour création d'interfaces graphiques avec PNJ. Développé pour serveurs Minecraft, permet des interactions customisées.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/NPJGui" target="_blank" class="btn-secondary">GitHub</a>
+            <a href="https://github.com/sami3737/NPJGui" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
         </div>
 
@@ -337,8 +337,8 @@
           <h3>Anthony – Système de recrutement RP</h3>
           <p>Système de candidature en ligne pour serveur RP. Formulaires dynamiques, gestion des candidatures, notifications automatiques.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/anthony" target="_blank" class="btn-secondary">GitHub</a>
-            <a href="https://demo.rust-evolution.net/anthony/" target="_blank" class="btn-secondary">Démo</a>
+            <a href="https://github.com/sami3737/anthony" target="_blank" class="btn-secondary">Voir le code</a>
+            <a href="https://demo.rust-evolution.net/anthony/" target="_blank" class="btn-secondary">Voir le projet →</a>
           </div>
         </div>
 
@@ -346,8 +346,8 @@
           <h3>Leaderboard Rust Experimental</h3>
           <p>Vitrine temps réel (2018) affichant chat et classement des joueurs. Mise à jour dynamique, design responsive.</p>
           <div class="project-links">
-            <a href="https://github.com/sami3737/leaderboard" target="_blank" class="btn-secondary">GitHub</a>
-            <a href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Démo</a>
+            <a href="https://github.com/sami3737/leaderboard" target="_blank" class="btn-secondary">Voir le code</a>
+            <a href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet →</a>
           </div>
         </div>
 
