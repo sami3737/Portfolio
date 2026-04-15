@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script defer src="assets/js/main.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio.rust-evolution.net/">
+  <meta property="og:title" content="Samuel Boutin – Développeur Full-Stack">
+  <meta property="og:description" content="Découvrez mes projets web, mes intégrations d'API (Steam, PayPal) et mes compétences en PHP, JS et C#.">
+  <meta property="og:image" content="https://portfolio.rust-evolution.net/assets/img/Rust.png"> <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Samuel Boutin – Portfolio">
+  <meta name="twitter:description" content="Développeur passionné en BTS SIO SLAM.">
+  <meta name="twitter:image" content="https://portfolio.rust-evolution.net/assets/img/Rust.png">
 </head>
 <body>
   <header>
