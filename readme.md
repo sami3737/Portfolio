@@ -1,4 +1,4 @@
-# 🚀 Portfolio - Rust Evolution
+# Portfolio - Rust Evolution
 
 Bienvenue sur mon portfolio
     https://www.portfolio.rust-evolution.net
