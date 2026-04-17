@@ -229,98 +229,98 @@
     <section id="featured-projects">
       <h2>Projets principaux</h2>
       <div class="featured-projects">
-        <!-- RustTech -->
+        <!-- Portfolio -->
         <div class="featured-card">
           <span class="featured-badge">Projet phare</span>
-          <h3>RustTech – Boutique en ligne full-stack</h3>
+          <h3>Portfolio</h3>
           <p class="description">
-            Plateforme e-commerce complète développée pour un serveur Rust avec intégration temps réel. Solution full-stack permettant aux joueurs d'acheter des objets virtuels et de les recevoir automatiquement en jeu via une connexion WebSocket sécurisée.
+            Portfolio de présentation de mes compétences et réalisations. Conçu pour mettre en valeur mes projets, mes compétences techniques et mon parcours professionnel de manière claire et attrayante. Le portfolio est structuré en sections distinctes pour une navigation facile, avec une attention particulière portée à l'expérience utilisateur et au design responsive.
           </p>
           <div class="tech-stack">
-            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
             <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">PayPal API</span>
-            <span class="tech-tag">WebSocket</span>
-            <span class="tech-tag">REST API</span>
-          </div>
-          <div class="key-features">
-            <div class="key-features-text">
-              <h4>Fonctionnalités clés</h4>
-              <ul>
-                <li>Système de paiement sécurisé avec intégration PayPal complète</li>
-                <li>Gestion utilisateur avec authentification et profils personnalisés</li>
-                <li>Interface administrateur pour la gestion des produits et commandes</li>
-                <li>Communication serveur-boutique en temps réel via WebSocket</li>
-                <li>Système de livraison automatique des achats en jeu</li>
-                <li>Historique des transactions et gestion des inventaires</li>
-              </ul>
-            </div>
-            <div class="key-features-image">
-              <img src="assets/img/Rust.png" alt="RustTech">
-            </div>
-          </div>
-          <div class="project-links">
-            <a aria-label="Lien vers github projet RustTech" href="https://github.com/sami3737/rusttech" target="_blank" class="btn-primary">
-              Voir le code →
-            </a>
-            <a aria-label="Lien vers démonstration projet RustTech" href="https://demo.rust-evolution.net/rusttech-main/" target="_blank" class="btn-secondary">
-              Voir le projet →
-            </a>
-          </div>
-        </div>
-        <!-- Boutique Rust Experimental -->
-        <div class="featured-card">
-          <span class="featured-badge">Projet phare</span>
-          <h3>Boutique Rust Experimental – Plateforme multi-paiements</h3>
-          <p class="description">
-            Solution e-commerce avancée avec intégration de multiples systèmes de paiement internationaux. Architecture modulaire permettant une gestion complète des transactions avec support de différentes devises et méthodes de paiement.
-          </p>
-          <div class="tech-stack">
             <span class="tech-tag">PHP</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">PayPal API</span>
-            <span class="tech-tag">Steam API</span>
-            <span class="tech-tag">G2A API</span>
-            <span class="tech-tag">OAuth</span>
+            <span class="tech-tag">Git</span>
           </div>
           <div class="key-features">
             <div class="key-features-text">
               <h4>Fonctionnalités clés</h4>
               <ul>
-                <li>Intégration de 3 systèmes de paiement (PayPal, Steam, G2A)</li>
-                <li>Gestion multi-devises et conversion automatique</li>
-                <li>Authentification Steam OAuth pour liaison de comptes</li>
-                <li>Tableau de bord administrateur complet</li>
-                <li>Système de codes promotionnels et réductions</li>
-                <li>Statistiques de ventes et rapports détaillés</li>
+                <li>Présentation claire de mes compétences et réalisations</li>
+                <li>Navigation fluide et intuitive entre les sections</li>
+                <li>Design moderne et responsive pour tous les appareils</li>
+                <li>Intégration de liens vers mes projets GitHub et démonstrations en ligne</li>
+                <li>Utilisation de technologies web standards pour une compatibilité maximale</li>
               </ul>
             </div>
             <div class="key-features-image">
-              <img src="assets/img/Advanced.png" alt="Advanced">
+              <img src="assets/img/Portfolio.png" alt="Portfolio">
             </div>
           </div>
           <div class="project-links">
-            <a aria-label="Lien vers github projet Rust" href="https://github.com/sami3737/rust" target="_blank" class="btn-primary">
+            <a aria-label="Lien vers github projet Portfolio" href="https://github.com/sami3737/Portfolio" target="_blank" class="btn-primary">
               Voir le code →
             </a>
-            <a aria-label="Lien vers démonstration projet Rust" href="https://demo.rust-evolution.net/rust-main/index.php" target="_blank" class="btn-secondary">
-              Voir le projet →
+            <a aria-label="Portfolio" href="#" target="_blank" class="btn-secondary">
+              Site actuel
             </a>
           </div>
         </div>
       </div>
       <h2>Autres réalisations</h2>
       <div class="grid">
-        <div class="card">
+        <!-- <div class="card">
+          <h3>Boutique Rust Experimental – Plateforme multi-paiements</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">AJAX</span>
+            </div>
+            <p class="description">Solution e-commerce avancée avec intégration de multiples systèmes de paiement internationaux. Architecture modulaire permettant une gestion complète des transactions avec support de différentes devises et méthodes de paiement.</p>
+          <div class="project-links">
+            <a aria-label="Lien vers github projet Silkroad_CMS" href="https://github.com/sami3737/rusttech" target="_blank" class="btn-secondary">Voir le code</a>
+            <a aria-label="Lien vers démonstration projet Rust" href="https://demo.rust-evolution.net/rusttech-main/" target="_blank" class="btn-secondary">
+              Voir le projet
+            </a>
+          </div>
+        </div> -->
+        <!-- <div class="card">
           <h3>Silkroad_CMS</h3>
           <p>Interface web de gestion pour serveur Silkroad Online. Connexion base MSSQL, gestion boutique et joueurs, système d'authentification.</p>
           <div class="project-links">
             <a aria-label="Lien vers github projet Silkroad_CMS" href="https://github.com/sami3737/Akeno" target="_blank" class="btn-secondary">Voir le code</a>
           </div>
+        </div> -->
+        <div class="card">
+          <h3>Site E-Commerce Wordpress</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">WooCommerce</span>
+            <span class="tech-tag">Theme Customization</span>
+            <span class="tech-tag">Plugin Configuration</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Security</span>
+          </div>
+          <p>Conception et déploiement d’un site e-commerce sous WordPress avec WooCommerce, incluant la configuration des produits, des paiements et la personnalisation du thème.</p>
+          <div class="project-links">
+            <a aria-label="Lien ver le site" href="https://www.rust-evolution.net" target="_blank" class="btn-secondary">Voir le projet</a>
+          </div>
         </div>
         <div class="card">
           <h3>PNJGui – Plugin Minecraft</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">JAVA</span>
+            <span class="tech-tag">Spigot API</span>
+            <span class="tech-tag">Citizens API</span>
+            <span class="tech-tag">Vault</span>
+            <span class="tech-tag">Inventory GUI</span>
+            <span class="tech-tag">YAML</span>
+          </div>
           <p>Plugin Java pour création d'interfaces graphiques avec PNJ. Développé pour serveurs Minecraft, permet des interactions customisées.</p>
           <div class="project-links">
             <a aria-label="Lien vers github projet PNJGui" href="https://github.com/sami3737/NPJGui" target="_blank" class="btn-secondary">Voir le code</a>
@@ -328,6 +328,14 @@
         </div>
         <div class="card">
           <h3>Anthony – Système de recrutement RP</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">AJAX</span>
+          </div>
           <p>Système de candidature en ligne pour serveur RP. Formulaires dynamiques, gestion des candidatures, notifications automatiques.</p>
           <div class="project-links">
             <a aria-label="Lien vers github projet Anthony" href="https://github.com/sami3737/anthony" target="_blank" class="btn-secondary">Voir le code</a>
@@ -336,7 +344,17 @@
         </div>
         <div class="card">
           <h3>Leaderboard Rust Experimental</h3>
-          <p>Vitrine temps réel (2018) affichant chat et classement des joueurs. Mise à jour dynamique, design responsive.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Real-time Data</span>
+            <span class="tech-tag">AJAX / Fetch API</span>
+            <span class="tech-tag">Dynamic UI</span>
+          </div>
+          <p>Vitrine temps réel (2018) affichant chat et classement des joueurs. Mise à jour dynamique.</p>
           <div class="project-links">
             <a aria-label="Lien vers github projet Leaderboard" href="https://github.com/sami3737/leaderboard" target="_blank" class="btn-secondary">Voir le code</a>
             <a aria-label="Lien vers démonstration projet Leaderboard" href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet</a>
@@ -410,6 +428,7 @@
               <div class="social-icons">
                   <a aria-label="Lien vers LinkedIn" href="https://www.linkedin.com/in/samuel-boutin-4b8089336/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                   <a aria-label="Lien vers GitHub" href="https://github.com/sami3737" target="_blank"><i class="fab fa-github"></i></a>
+                  <div>Mon tableau de synthèse:<a aria-label="Lien vers tableau de synthèse" href="assets/docs/E5_Tableau-de-synthese.xlsx" target="_blank"><i class="fas fa-file-excel"></i></a></div>
                   <div>Mon CV:<a aria-label="Lien vers CV" href="assets/docs/CV_Samuel_Boutin.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a></div>
               </div>
           </div>

@@ -618,6 +618,29 @@ display: inline-block;
       font-weight: 600;
     }
   
+    & .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-bottom: 1.5rem;
+
+        .tech-tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: var(--accent-bright);
+            padding: 0.4rem 0.85rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-family: 'Space Mono', monospace;
+            transition: all 0.3s ease;
+
+            &:hover{
+                background: rgba(59, 130, 246, 0.2);
+                border-color: rgba(59, 130, 246, 0.4);
+            }
+        }
+    }
+
     & p {
       color: var(--text-secondary);
       font-size: 0.95rem;
