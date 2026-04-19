@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Boutin – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <script defer src="assets/js/main.js"></script>
-</head>
-<body>
-
-  <header>
-    <h1>Portfolio - Samuel Boutin</h1>
-    <p>Développeur web full‑stack passionné, je conçois des applications modernes en alliant performance, sécurité et expérience utilisateur.</p>
-    <!-- Navigation -->
-    <nav class="nav_bar">
-      <div class="nav">
-        <ul>
-          <div class="nav-pill"></div>
-          <li><a href="#about" class="active">Profil</a></li>
-          <li><a href="#bts-sio">BTS SIO</a></li>
-          <li><a href="#featured-projects">Projets</a></li>
-          <li><a href="#docs">Documentations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-    
-    <main>
-
+<?php
+// veille.php
+include 'header.php';
+?>
+<main>
     <section id="intro">
+        <h1>PAGE EN CONSTRUCTION...</h1>
         <h2>Introduction</h2>
         <div class="card">
             <p>

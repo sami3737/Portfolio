@@ -2,6 +2,16 @@
  * Cette section gère le bouton "Retour en haut" qui apparaît lorsque l'utilisateur fait défiler la page.
  */
 const backToTopButton = document.getElementById('back-to-top');
+const header = document.querySelector('header');
+let currentSection; // Section actuellement affichée
+
+// Appliquer l'effet ligne par ligne au contenu initial au chargement de la page
+window.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.container');
+    if (container) {
+        loadSection('profil'); // Charger la section initiale
+    }
+});
 
 if (backToTopButton) {
     window.addEventListener('scroll', function() {
@@ -52,12 +62,26 @@ function movePill(link) {
 }
 
 navLinks.forEach(link => {
-    // Navigation fluide
+    // Chargement de la section correspondante
     link.addEventListener('click', function(event) {
         event.preventDefault();
-        const targetSection = document.getElementById(this.getAttribute('href').substring(1));
-        if (targetSection) targetSection.scrollIntoView({ behavior: 'smooth' });
+        const sectionId = this.getAttribute('data-section');
+        loadSection(sectionId);
+        
+        // Retirer la classe active de tous les liens
+        navLinks.forEach(l => {
+            l.classList.remove('active');
+            l.style.color = '';
+        });
+        
+        // Ajouter la classe active au lien cliqué
+        this.classList.add('active');
+        this.style.color = 'white';
+        
+        // Déplacer la pilule
+        movePill(this);
     });
+    
 
     // Déplace la pilule au survol
     link.addEventListener('mouseenter', () => movePill(link));
@@ -69,6 +93,7 @@ navLinks.forEach(link => {
         link.style.color = 'white';
         movePill(link);
     });
+    movePill(document.querySelector('.nav a.active'));
 });
 
 // Reset la position de la pilule lorsque la souris quitte la zone de navigation
@@ -79,60 +104,20 @@ document.querySelector('.nav ul').addEventListener('mouseleave', () => {
     movePill(active);
 });
 
-
-/** Cette fonction met à jour la classe active des liens de navigation en fonction de la section visible */
-function updateActiveNavLink() {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav a');
-    const headerOffset = 80;
-
-    let currentSectionId = '';
-    // Parcourt chaque section pour déterminer laquelle est actuellement visible
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - headerOffset;
-        const sectionHeight = section.offsetHeight;
-
-        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-            currentSectionId = section.getAttribute('id');
-        }
-    });
-
-    // Si l'utilisateur est proche du bas de la page, forcer la sélection de la dernière section
-    if(window.scrollY + window.innerHeight >= document.body.offsetHeight - 100) {
-        currentSectionId = sections[sections.length - 1].getAttribute('id');
-    }
-
-    // Met à jour les classes des liens de navigation en fonction de la section visible
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        link.style.color = '';
-        if (link.getAttribute('href').substring(1) === currentSectionId) {
-            link.classList.add('active');
-            link.style.color = 'white';
-        }
-    });
-    movePill(document.querySelector('.nav a.active'));
-}
-
-/** Ajoute un écouteur d'événement pour mettre à jour les liens de navigation lors du défilement */
-window.addEventListener('scroll', updateActiveNavLink);
-
-/** Appelle la fonction une fois au chargement pour définir le lien actif initial */
-updateActiveNavLink();
-requestAnimationFrame(() => movePill(document.querySelector('.nav a.active')));
-
 /** Card Flip Effect
  * Cette section gère l'effet de retournement des cartes de compétences. 
  * Lorsqu'une carte est cliquée, la classe "is-flipped" est ajoutée ou supprimée à l'élément interne de la carte, 
  * ce qui déclenche l'animation de retournement définie dans le CSS.
  */
-const card = document.querySelectorAll('.cardskill-card');
+function applyCardFlipEffect() {
+    const card = document.querySelectorAll('.cardskill-card');
 
-card.forEach(function(cardElement) {
-    cardElement.addEventListener('click', function() {
-        this.querySelector('.card__inner').classList.toggle('is-flipped');
+    card.forEach(function(cardElement) {
+        cardElement.addEventListener('click', function() {
+            this.querySelector('.card__inner').classList.toggle('is-flipped');
+        });
     });
-});
+}
 
 // Envoyer le formulaire de contact via AJAX
 const contactForm = document.getElementById('contact-form');
@@ -155,5 +140,78 @@ if (contactForm) {
         };
 
         xhr.send(formData);
+    });
+}
+
+function loadSection(sectionId) {
+    if (!sectionId) return;
+
+    if (sectionId === currentSection) {
+        // Si la section demandée est déjà affichée, ne rien faire
+        return;
+    }
+
+    currentSection = sectionId; // Mettre à jour la section actuelle
+
+    if(sectionId === 'contact') {
+        // Si la section est "contact", faire défiler vers le bas
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        return;
+    }
+
+    fetch(`./${sectionId}.php`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur HTTP : ' + response.status);
+            }
+            return response.text();
+        })
+        .then(data => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+            const mainContent = doc.querySelector('main');
+            if (mainContent) {
+                const container = document.querySelector('.dynamicContent') || document.querySelector('.container');
+                container.innerHTML = mainContent.innerHTML;
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                // Appliquer l'effet de flip aux cartes immédiatement après génération
+                if (sectionId === 'profil') {
+                    applyCardFlipEffect();
+                }
+                // Appliquer l'effet ligne par ligne
+                applyLineByLineEffect(container);
+            } else {
+                throw new Error(`Aucune balise <main> trouvée dans ${sectionId}.php`);
+            }
+        })
+        .catch(error => {
+            console.error(`Erreur lors du chargement de la section ${sectionId} :`, error);
+            const container = document.querySelector('.dynamicContent') || document.querySelector('.container');
+            container.innerHTML = `<p>Impossible de charger la section ${sectionId} pour le moment.</p>`;
+        });
+}
+
+// Fonction pour appliquer l'effet ligne par ligne
+function applyLineByLineEffect(container) {
+    const elements = container.querySelectorAll('*'); // Tous les éléments enfants
+
+    elements.forEach((el, index) => {
+        // Exclure les éléments des cartes de compétences pour éviter les conflits avec le flip
+        if (el.classList.contains('cardskill-card') || el.closest('.cardskill-card')) {
+            return;
+        }        
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, index * 50); // Délai réduit à 50ms entre chaque élément
     });
 }
