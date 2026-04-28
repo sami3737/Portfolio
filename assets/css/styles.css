@@ -1200,4 +1200,13 @@ display: inline-block;
       }
     }
   }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 12px;
+
+    & a {
+      font-size: 20px;
+    }
+  }
 }
