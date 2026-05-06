@@ -192,6 +192,9 @@ include 'header.php';
                         <li>
                             Documentation Unity : <a href="https://docs.unity3d.com" target="_blank">https://docs.unity3d.com</a>
                         </li>
+                        <li>
+                            Documentation URP : <a href="https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest" target="_blank">URP Documentation</a>
+                        </li>
                     </ul>
 
                     <h3>Actualités et évolutions</h3>
@@ -202,6 +205,9 @@ include 'header.php';
 
                         <li>
                             Chaîne YouTube Unity : <a href="https://www.youtube.com/@unity" target="_blank">Unity YouTube</a>
+                        </li>
+                        <li>
+                            Actualités sur l'IA et les outils d'automatisation : <a href="https://unity.com/features/ai" target="_blank">Unity AI</a>
                         </li>
                     </ul>
 
