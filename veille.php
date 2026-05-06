@@ -174,14 +174,6 @@ include 'header.php';
 
                 <p>Dans le cadre de ma formation, Unity représente une technologie intéressante à maîtriser, car elle permet de développer rapidement des projets concrets.</p>
             </div>
-            <div class="info-card">
-                <p>Unity reste aujourd’hui une référence dans le développement de jeux indépendants. Son orientation vers la 2D et sa facilité d’utilisation en font un outil accessible.</p>
-
-                <p>Cependant, les changements récents de politique économique ont suscité des critiques, ce qui pourrait pousser certains développeurs vers des alternatives comme Godot.</p>
-
-                <p>Malgré cela, Unity continue d’évoluer et d’améliorer ses outils. Il reste donc un moteur incontournable dans l’industrie.</p>
-                <p>Dans le cadre de ma formation, Unity représente une technologie intéressante à maîtriser, car elle permet de développer rapidement des projets concrets.</p>
-            </div>
         </div>
     </section>
     <section class="sources" id="sources">
