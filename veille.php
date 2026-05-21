@@ -176,6 +176,290 @@ include 'header.php';
             </div>
         </div>
     </section>
+    
+    <section class="legal" id="legal">
+        <h2>Obligations légales dans le développement Unity</h2>
+        <div class="row">
+            <div class="info-card">
+        <p>
+            Le développement d’un jeu vidéo ou d’une application avec Unity implique plusieurs obligations légales,
+            notamment concernant la protection des données personnelles, la monétisation, la publicité et la sécurité.
+            Ces règles proviennent principalement du RGPD (Règlement Général sur la Protection des Données),
+            de la directive ePrivacy, des règles des stores mobiles et des législations nationales applicables.
+        </p>
+
+        <!-- RGPD -->
+        <article>
+            <h3>1. Protection des données personnelles (RGPD)</h3>
+
+            <p>
+                Le RGPD impose d’informer les utilisateurs sur les données collectées, leur utilisation
+                et leur durée de conservation.
+            </p>
+
+            <h4>Concrètement dans Unity :</h4>
+            <ul>
+                <li>Unity Analytics</li>
+                <li>Firebase Analytics</li>
+                <li>Comptes utilisateurs</li>
+                <li>Cloud Save</li>
+                <li>Publicités ciblées</li>
+            </ul>
+
+            <h4>Durées de conservation recommandées :</h4>
+            <ul>
+                <li>Logs techniques : 6 à 12 mois</li>
+                <li>Données analytics : 13 mois maximum</li>
+                <li>Comptes inactifs : 2 à 3 ans</li>
+            </ul>
+
+            <h4>Risques :</h4>
+            <ul>
+                <li>Amendes administratives (jusqu’à 20 millions € ou 4 % du CA mondial)</li>
+                <li>Suppression du jeu des stores</li>
+                <li>Plaintes utilisateurs</li>
+            </ul>
+
+            <h4>Bonnes pratiques :</h4>
+            <ul>
+                <li>Limiter les données collectées</li>
+                <li>Ajouter une politique de confidentialité</li>
+                <li>Documenter les traitements de données</li>
+            </ul>
+        </article>
+
+        <!-- CONSENTEMENT -->
+        <article>
+            <h3>2. Consentement et trackers (ePrivacy)</h3>
+
+            <p>
+                Les SDK publicitaires ou analytiques doivent respecter les règles de consentement utilisateur.
+            </p>
+
+            <h4>SDK concernés :</h4>
+            <ul>
+                <li>Unity Ads</li>
+                <li>Firebase</li>
+                <li>Google AdMob</li>
+                <li>AppLovin</li>
+            </ul>
+
+            <h4>Obligations :</h4>
+            <ul>
+                <li>Obtenir un consentement explicite avant le tracking</li>
+                <li>Permettre le refus des cookies et trackers</li>
+                <li>Informer clairement l’utilisateur</li>
+            </ul>
+
+            <h4>Risques :</h4>
+            <ul>
+                <li>Sanctions CNIL</li>
+                <li>Blocage publicitaire</li>
+                <li>Suppression du store</li>
+            </ul>
+
+            <h4>Recommandations :</h4>
+            <ul>
+                <li>Ajouter une bannière de consentement</li>
+                <li>Bloquer les SDK avant acceptation</li>
+                <li>Permettre la modification du choix utilisateur</li>
+            </ul>
+        </article>
+
+        <!-- DROITS UTILISATEURS -->
+        <article>
+            <h3>3. Droits des utilisateurs</h3>
+
+            <p>
+                Les utilisateurs disposent de plusieurs droits sur leurs données personnelles.
+            </p>
+
+            <ul>
+                <li>Droit d’accès aux données</li>
+                <li>Droit de rectification</li>
+                <li>Droit à l’effacement (“droit à l’oubli”)</li>
+                <li>Droit à la portabilité</li>
+            </ul>
+
+            <h4>Délai légal :</h4>
+            <p>Les demandes doivent généralement être traitées sous 1 mois.</p>
+
+            <h4>Recommandations :</h4>
+            <ul>
+                <li>Prévoir un contact RGPD</li>
+                <li>Permettre la suppression des comptes</li>
+                <li>Exporter les données utilisateur sur demande</li>
+            </ul>
+        </article>
+
+        <!-- MINEURS -->
+        <article>
+            <h3>4. Protection des mineurs (COPPA / RGPD Enfants)</h3>
+
+            <p>
+                Les jeux destinés aux enfants sont soumis à des règles renforcées.
+            </p>
+
+            <h4>Réglementations :</h4>
+            <ul>
+                <li>COPPA (Children’s Online Privacy Protection Act)</li>
+                <li>RGPD Enfants</li>
+            </ul>
+
+            <h4>Obligations :</h4>
+            <ul>
+                <li>Limiter la collecte de données</li>
+                <li>Obtenir le consentement parental si nécessaire</li>
+                <li>Éviter la publicité ciblée pour les mineurs</li>
+            </ul>
+
+            <h4>Risques :</h4>
+            <ul>
+                <li>Suppression des stores</li>
+                <li>Sanctions financières</li>
+            </ul>
+
+            <h4>Bonnes pratiques :</h4>
+            <ul>
+                <li>Activer les paramètres “Designed for Families”</li>
+                <li>Désactiver le tracking publicitaire</li>
+            </ul>
+        </article>
+
+        <!-- POLITIQUE CONFIDENTIALITE -->
+        <article>
+            <h3>5. Politique de confidentialité et mentions légales</h3>
+
+            <p>
+                Une politique de confidentialité est obligatoire dès qu’une donnée personnelle est collectée.
+            </p>
+
+            <h4>Elle doit contenir :</h4>
+            <ul>
+                <li>Données collectées</li>
+                <li>Finalités des traitements</li>
+                <li>Durées de conservation</li>
+                <li>Droits des utilisateurs</li>
+                <li>Coordonnées du responsable</li>
+            </ul>
+
+            <h4>Où l’afficher :</h4>
+            <ul>
+                <li>Site web</li>
+                <li>Stores mobiles</li>
+                <li>Menu du jeu</li>
+            </ul>
+        </article>
+
+        <!-- CGU -->
+        <article>
+            <h3>6. Conditions Générales d’Utilisation (CGU)</h3>
+
+            <p>
+                Les CGU définissent les règles d’utilisation du jeu ou de l’application.
+            </p>
+
+            <h4>Elles peuvent inclure :</h4>
+            <ul>
+                <li>Règles communautaires</li>
+                <li>Gestion des comptes bannis</li>
+                <li>Restrictions d’utilisation</li>
+                <li>Responsabilités de l’éditeur</li>
+            </ul>
+
+            <h4>Recommandations :</h4>
+            <ul>
+                <li>Prévoir des CGU même pour un petit projet</li>
+                <li>Afficher les CGU avant création de compte</li>
+            </ul>
+        </article>
+
+        <!-- MONETISATION -->
+        <article>
+            <h3>7. Achats intégrés et monétisation</h3>
+
+            <p>
+                Les achats in-app doivent respecter les règles des plateformes et du droit de la consommation.
+            </p>
+
+            <h4>Obligations :</h4>
+            <ul>
+                <li>Afficher clairement les prix</li>
+                <li>Informer sur les abonnements</li>
+                <li>Respecter les règles Google Play et App Store</li>
+            </ul>
+
+            <h4>Durée de conservation :</h4>
+            <ul>
+                <li>Factures et preuves d’achat : 10 ans</li>
+            </ul>
+
+            <h4>Risques :</h4>
+            <ul>
+                <li>Litiges consommateurs</li>
+                <li>Suppression des achats intégrés</li>
+            </ul>
+
+            <h4>Bonnes pratiques :</h4>
+            <ul>
+                <li>Éviter les achats trompeurs</li>
+                <li>Informer clairement sur les probabilités des loot boxes</li>
+            </ul>
+        </article>
+
+        <!-- SECURITE -->
+        <article>
+            <h3>8. Sécurité des données et violations</h3>
+
+            <p>
+                Le développeur doit protéger les données stockées et prévenir les accès non autorisés.
+            </p>
+
+            <h4>Mesures recommandées :</h4>
+            <ul>
+                <li>Utiliser HTTPS</li>
+                <li>Chiffrer les mots de passe</li>
+                <li>Limiter les accès administrateurs</li>
+                <li>Mettre à jour les SDK Unity</li>
+            </ul>
+
+            <h4>Violation de données :</h4>
+            <p>
+                En cas de fuite de données, une notification à la CNIL peut être obligatoire sous 72 heures.
+            </p>
+
+            <h4>Risques :</h4>
+            <ul>
+                <li>Sanctions réglementaires</li>
+                <li>Atteinte à la réputation du projet</li>
+            </ul>
+        </article>
+
+        <!-- STORES -->
+        <article>
+            <h3>9. Obligations liées aux stores</h3>
+
+            <h4>Google Play :</h4>
+            <ul>
+                <li>Data Safety Form obligatoire</li>
+                <li>Déclaration des permissions sensibles</li>
+            </ul>
+
+            <h4>App Store :</h4>
+            <ul>
+                <li>App Privacy Details</li>
+                <li>App Tracking Transparency (ATT)</li>
+            </ul>
+
+            <h4>ATT (App Tracking Transparency) :</h4>
+            <p>
+                Apple impose une demande d’autorisation avant tout tracking publicitaire.
+            </p>
+        </article>
+        </div>
+        </div>
+    </section>
+
     <section class="sources" id="sources">
         <h2>Sources de la veille technologique</h2>
             <div class="row">
@@ -244,8 +528,8 @@ include 'header.php';
                     <p>Les informations ont été croisées afin d’assurer leur fiabilité et leur actualisation.</p>
                 </div>
             </div>
-        </section>
-    </main>
+    </section>
+</main>
 <?php
 include 'footer.php';
 ?>
