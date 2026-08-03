@@ -152,7 +152,7 @@ include 'header.php';
               Ce projet m'a également permis de résoudre un incident de connexion lié au protocole TLS, renforçant mes compétences en diagnostic réseau et en dépannage.
               </p>
             <div class="project-links">
-              <a aria-label="Lien vers la documentation" href="https://www.rust-evolution.net/assets/docs/NAS.pdf" target="_blank" class="btn-secondary">Voir le projet</a>
+              <a aria-label="Lien vers la documentation" href="assets/docs/NAS.pdf" target="_blank" class="btn-secondary">Voir le projet</a>
             </div>
           </div>
         </div>
