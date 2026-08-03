@@ -137,6 +137,24 @@ include 'header.php';
               <a aria-label="Lien vers démonstration projet Leaderboard" href="https://demo.rust-evolution.net/leaderboard/" target="_blank" class="btn-secondary">Voir le projet</a>
             </div>
           </div>
+          <div class="card">
+            <h3>Serveur NAS Synology sécurisé avec OpenVPN</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">Administration système</span>
+              <span class="tech-tag">Réseau (NAT, DDNS)</span>
+              <span class="tech-tag">VPN</span>
+              <span class="tech-tag">Sécurité</span>
+              <span class="tech-tag">Diagnostic et résolution d'incidents</span>
+            </div>
+            <p>Projet personnel – Administration système et réseau
+              Mise en place d'un serveur Synology DS214se afin de centraliser le stockage de fichiers et de permettre un accès distant sécurisé.
+              Le projet comprend l'installation et la configuration de Synology DSM, la gestion des utilisateurs et des permissions, la configuration d'un DNS dynamique (DDNS) ainsi que le déploiement d'un serveur OpenVPN pour sécuriser les connexions externes.
+              Ce projet m'a également permis de résoudre un incident de connexion lié au protocole TLS, renforçant mes compétences en diagnostic réseau et en dépannage.
+              </p>
+            <div class="project-links">
+              <a aria-label="Lien vers la documentation" href="https://www.rust-evolution.net/assets/docs/NAS.pdf" target="_blank" class="btn-secondary">Voir le projet</a>
+            </div>
+          </div>
         </div>
       </section>
 </main>
