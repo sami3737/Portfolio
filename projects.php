@@ -155,6 +155,28 @@ include 'header.php';
               <a aria-label="Lien vers la documentation" href="assets/docs/NAS.pdf" target="_blank" class="btn-secondary">Voir le projet</a>
             </div>
           </div>
+          <div class="card">
+            <h3>Conception et déploiement d’un outil Python de classement intelligent des ressources pédagogiques avec Ollama et Tesseract OCR</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Ollama</span>
+              <span class="tech-tag">Llama 3.1</span>
+              <span class="tech-tag">Tesseract OCR</span>
+              <span class="tech-tag">Watchdog</span>
+              <span class="tech-tag">IA générative</span>
+              <span class="tech-tag">Automatisation</span>
+            </div>
+            <p>Projet personnel – Administration système et réseau
+              Développement d'un outil Python autonome pour organiser automatiquement les ressources pédagogiques d'un dossier de cours. 
+              Le script surveille en temps réel un répertoire source via watchdog, extrait le texte des fichiers (PDF, DOCX, XLSX, ODT, images) grâce à pdfplumber et Tesseract OCR, puis classe chaque document par catégorie et sous-catégorie à l'aide du modèle IA local Llama 3.1 via Ollama. 
+              Deux modes d'exécution sont proposés : un mode automatique sans intervention et un mode interactif permettant à l'utilisateur de valider ou corriger le classement proposé. 
+              Les corrections manuelles sont enregistrées dans un fichier learning.json, permettant au système d'affiner progressivement ses classifications futures. 
+              Le projet illustre une approche pragmatique combinant traitement de documents, OCR et IA générative pour automatiser une tâche organisationnelle récurrente.
+              </p>
+            <div class="project-links">
+              <a aria-label="Lien vers la documentation" href="assets/docs/NAS.pdf" target="_blank" class="btn-secondary">Voir le projet</a>
+            </div>
+          </div>
         </div>
       </section>
 </main>
