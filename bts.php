@@ -28,7 +28,7 @@ include 'header.php';
           <div class="info-card">
             <h3>OPTION SISR</h3>
             <p>
-              L'option Services Informatiques aux Organisations (SISR) du BTS SIO prépare les étudiants à devenir des techniciens capables de concevoir, installer, gérer et maintenir les infrastructures informatiques d'une organisation. Les compétences acquises incluent la gestion des réseaux, la sécurité informatique, l'administration des systèmes d'exploitation et la gestion des bases de données.
+              Solutions d’Infrastructure, Systèmes et Réseaux (SISR) du BTS SIO prépare les étudiants à devenir des techniciens capables de concevoir, installer, gérer et maintenir les infrastructures informatiques d'une organisation. Les compétences acquises incluent la gestion des réseaux, la sécurité informatique, l'administration des systèmes d'exploitation et la gestion des bases de données.
             </p>
             <h3>Métiers</h3>
             <ul>

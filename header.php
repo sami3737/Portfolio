@@ -29,7 +29,7 @@
           <li><a arialabel="Profil" data-section="profil" href="#about" class="active">Profil</a></li>
           <li><a arialabel="BTS SIO" data-section="bts" href="#bts-sio">BTS SIO</a></li>
           <li><a arialabel="Projets" data-section="projects" href="#featured-projects">Projets</a></li>
-          <li><a arialabel="Documentations" data-section="doc" href="#docs">Documentations</a></li>
+          <li><a arialabel="Livrables et ressources techniques" data-section="doc" href="#docs">Livrables et ressources techniques</a></li>
           <li><a arialabel="Veille technologique" data-section="veille" href="#tech-watch">Veille</a></li>
           <li><a arialabel="Contact" data-section="contact" href="#contact">Contact</a></li>
         </ul>
